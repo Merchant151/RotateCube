@@ -14,25 +14,45 @@ void draw()
  rotateZ(thetaZ);
   drawCube(100);
   translate(150,0,0);
-  drawCube(30);
+  //drawCube(30);
  
  if(keyPressed){
-  if(key == '2')
+  if(key == 'x')
     thetaX = thetaX - 0.01;
-  else if(key == '3')
+  else if(key == 'X')
     thetaX = thetaX + 0.01;
-  else if(key == '4')
+  else if(key == 'y')
     thetaY = thetaY - 0.01;
-  else if(key == '5')
+  else if(key == 'Y')
     thetaY = thetaY + 0.01;
-  else if(key == '6')
+  else if(key == 'z')
     thetaZ = thetaZ - 0.01;
-  else if(key == '7')
+  else if(key == 'Z')
     thetaZ = thetaZ + 0.01;
     else if (key == '1'){
       thetaX = 0;
       thetaY = 0;
-      thetaZ = 0;
+      thetaZ = 0; 
+    }else if (key == '2'){
+      thetaX = 3.14;
+      thetaY = 0;
+      thetaZ = 0; 
+    }else if (key == '3'){
+      thetaX = -1.57;
+      thetaY = 0;
+      thetaZ = 0; 
+    }else if (key == '4'){
+      thetaX = 0;
+      thetaY = -1.57;
+      thetaZ = 0; 
+    }else if (key == '5'){
+      thetaX = 0;
+      thetaY = 1.57;
+      thetaZ = 0; 
+    }else if (key == '6'){
+      thetaX = 1.57;
+      thetaY = 0;
+      thetaZ = 0; 
     }
  }
  //theta = theta + 0.01;
